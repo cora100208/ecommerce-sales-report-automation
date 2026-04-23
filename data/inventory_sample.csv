@@ -1,0 +1,8 @@
+
+sku,product_name,current_stock,reorder_level,supplier_lead_days
+SKU001,Wireless Mouse,8,10,7
+SKU002,USB Keyboard,20,8,10
+SKU003,Laptop Stand,5,6,14
+SKU004,Webcam HD,4,5,10
+SKU005,Desk Lamp,12,6,15
+SKU006,Phone Holder,18,10,5
