@@ -1,4 +1,3 @@
-
 from config import ORDERS_FILE, INVENTORY_FILE, REPORT_FILE
 from loader import load_csv
 from cleaner import clean_orders, clean_inventory
@@ -12,21 +11,17 @@ from reporter import export_report
 
 
 def main() -> None:
-    # 1. Load raw data
     orders_raw = load_csv(ORDERS_FILE)
     inventory_raw = load_csv(INVENTORY_FILE)
 
-    # 2. Clean data
     orders_df = clean_orders(orders_raw)
     inventory_df = clean_inventory(inventory_raw)
 
-    # 3. Analyze data
     daily_summary = build_daily_summary(orders_df)
     sku_summary = build_sku_summary(orders_df)
     channel_summary = build_channel_summary(orders_df)
     inventory_alerts = build_inventory_alerts(sku_summary, inventory_df)
 
-    # 4. Export report
     export_report(
         REPORT_FILE,
         daily_summary,
@@ -41,4 +36,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
