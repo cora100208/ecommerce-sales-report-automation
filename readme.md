@@ -1,40 +1,59 @@
+Automatically generate clean, structured sales reports from raw CSV data.
 
-# eCommerce Sales Report Automation
+## 🚀 What this does
 
-A Python automation project that cleans order data, analyzes sales performance, merges inventory data, and exports an Excel report with restock suggestions.
+- Merge and clean messy order data
+- Generate daily sales summary
+- Analyze product (SKU) performance
+- Analyze sales channels
+- Detect low inventory risks
+- Export everything into a ready-to-use Excel report
 
-## Features
-- Clean raw CSV order data
-- Filter valid paid orders
-- Calculate revenue automatically
-- Build daily sales summary
-- Build SKU-level performance summary
-- Build channel summary
-- Generate inventory alerts and restock suggestions
-- Export everything into one Excel file
+---
 
-## Tech Stack
-- Python
-- pandas
-- openpyxl
+## 📈 Example Output
 
-## Input Files
-- `data/orders_sample.csv`
-- `data/inventory_sample.csv`
+### Daily Sales Summary
+![Report1](docs/report1.png)
 
-## Output
-- `output/sales_report.xlsx`
+### SKU Analysis
+![Report2](docs/report2.png)
 
-## Run
+### Inventory Alerts
+![Report3](docs/report3.png)
+
+---
+
+## 🧠 Use Case
+
+This is useful for:
+
+- Shopify sellers
+- Amazon sellers
+- Small eCommerce businesses
+- Anyone managing orders in CSV/Excel
+
+---
+
+## ⚙️ How to run
+
 ```bash
 pip install -r requirements.txt
 python src/main.py
-````
+📦 Input
+orders_sample.csv
+inventory_sample.csv
+📤 Output
+sales_report.xlsx
+💡 What problem it solves
 
-## Use Cases
+Instead of manually cleaning Excel data every day,
+this script automates the entire reporting process.
 
-* Shopify sales reporting
-* Amazon store reporting
-* Inventory warning dashboards
-* Small eCommerce operations automation
+🧩 Customization
 
+Can be adapted for:
+
+different CSV formats
+different business rules
+automated reporting workflows
